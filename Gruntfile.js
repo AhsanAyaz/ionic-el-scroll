@@ -22,6 +22,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-karma');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 
 	/**
 	Function that wraps everything to allow dynamically setting/changing grunt options and config later by grunt task. This init function is called once immediately (for using the default grunt options, config, and setup) and then may be called again AFTER updating grunt (command line) options.
@@ -103,7 +104,17 @@ module.exports = function(grunt) {
 					src: ['el-scroll.css'],
 					dest: 'el-scroll.min.css'
 				}
-			}/*,
+			},
+	        connect: {
+	            server: {
+	                options: {
+	                    port: 9001,
+	                    base: '',
+	                    keepalive:true,
+	                    livereload:true
+	                }
+	            }
+	        }/*,
 			karma: {
 				unit: {
 					configFile: publicPathRelativeRoot+'config/karma.conf.js',

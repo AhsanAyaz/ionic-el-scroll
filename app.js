@@ -5,11 +5,11 @@
 
 'use strict';
 
-angular.module('myApp', [
-'ngRoute', 'ngSanitize', 'ngTouch', 'ngAnimate',		//additional angular modules
-'Ahsan Ayaz.angular-el-scroll'
+angular.module('myApp', [	//additional angular modules
+	'ionic',
+'aa.ionic-el-scroll'
 ]).
-config(['$routeProvider', '$locationProvider', '$compileProvider', function($routeProvider, $locationProvider, $compileProvider) {
+config(['$stateProvider', '$locationProvider', '$compileProvider', '$urlRouterProvider', function($stateProvider, $locationProvider, $compileProvider, $urlRouterProvider) {
 	/**
 	setup - whitelist, appPath, html5Mode
 	@toc 1.
@@ -18,15 +18,21 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	
 	// var staticPath ='/';
 	var staticPath;
-	// staticPath ='/angular-directives/angular-el-scroll/';		//local
-	staticPath ='/';		//nodejs (local)
-	// staticPath ='/angular-el-scroll/';		//gh-pages
+	// staticPath ='/angular-directives/ionic-el-scroll/';		//local
+	// staticPath ='/';		//nodejs (local)
+	staticPath ='/ionic-el-scroll/';		//gh-pages
 	var appPathRoute ='/';
 	var pagesPath =staticPath+'pages/';
 	
 	
-	$routeProvider.when(appPathRoute+'home', {templateUrl: pagesPath+'home/home.html'});
+	// $routeProvider.when(appPathRoute+'home', {templateUrl: pagesPath+'home/home.html'});
 
-	$routeProvider.otherwise({redirectTo: appPathRoute+'home'});
+	// $routeProvider.otherwise({redirectTo: appPathRoute+'home'});
+	$stateProvider.state('home',{
+		url:'/home',
+		templateUrl: pagesPath + 'home/home.html',
+		controlle: 'HomeCtrl'
+	});
+	 $urlRouterProvider.otherwise('/');
 	
 }]);

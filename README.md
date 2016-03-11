@@ -3,7 +3,7 @@
 [TODO - brief summary]
 
 ## Demo
-http://Ahsan Ayaz.github.io/angular-el-scroll/
+http://Ahsan Ayaz.github.io/ionic-el-scroll/
 
 ## Dependencies
 - required:
@@ -16,18 +16,18 @@ See `bower.json` and `index.html` in the `gh-pages` branch for a full list / mor
 ## Install
 1. download the files
 	1. Bower
-		1. add `"angular-el-scroll": "latest"` to your `bower.json` file then run `bower install` OR run `bower install angular-el-scroll`
+		1. add `"ionic-el-scroll": "latest"` to your `bower.json` file then run `bower install` OR run `bower install ionic-el-scroll`
 2. include the files in your app
 	1. `el-scroll.min.js`
 	2. `el-scroll.less` OR `el-scroll.min.css` OR `el-scroll.css`
-3. include the module in angular (i.e. in `app.js`) - `Ahsan Ayaz.angular-el-scroll`
+3. include the module in angular (i.e. in `app.js`) - `Ahsan Ayaz.ionic-el-scroll`
 
 See the `gh-pages` branch, files `bower.json` and `index.html` for a full example.
 
 
 ## Documentation
 See the `el-scroll.js` file top comments for usage examples and documentation
-https://github.com/Ahsan Ayaz/angular-el-scroll/blob/master/el-scroll.js
+https://github.com/Ahsan Ayaz/ionic-el-scroll/blob/master/el-scroll.js
 
 
 ## Development
@@ -48,4 +48,4 @@ https://github.com/Ahsan Ayaz/angular-el-scroll/blob/master/el-scroll.js
 	3. `git checkout gh-pages`
 	4. `git push origin gh-pages`
 5. (optional) register bower component
-	1. `bower register angular-el-scroll [git repo url]`
+	1. `bower register ionic-el-scroll [git repo url]`

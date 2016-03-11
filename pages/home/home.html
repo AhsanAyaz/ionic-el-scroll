@@ -1,3 +1,21 @@
-<div ng-controller='HomeCtrl'>	
-	<!-- TODO: place directive call here -->
-</div>
+
+
+<ion-view id="HomePage">
+  <div class="bar bar-header bar-positive">
+    <h2 class="title">El Scroll</h2>
+  </div>
+  <ion-content class="padding has-header" delegate-handle="myDelegate">
+    <div ng-controller='HomeCtrl'>	
+		<div class="card">
+			<a ng-repeat="item in items" class="item" el-scroll="{{item.id}}" delegate="myDelegate" animate="true">	{{item.title}}</a>
+		</div>
+
+		<!-- sections here -->
+		<div class="list-container">
+			<div class="list-item section" id="{{item.id}}" ng-repeat="item in items">
+				{{item.title}}
+			</div>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>
