@@ -19,8 +19,8 @@ config(['$stateProvider', '$locationProvider', '$compileProvider', '$urlRouterPr
 	// var staticPath ='/';
 	var staticPath;
 	// staticPath ='/angular-directives/ionic-el-scroll/';		//local
-	// staticPath ='/';		//nodejs (local)
-	staticPath ='/ionic-el-scroll/';		//gh-pages
+	staticPath ='/';		//nodejs (local)
+	// staticPath ='/ionic-el-scroll/';		//gh-pages
 	var appPathRoute ='/';
 	var pagesPath =staticPath+'pages/';
 	
