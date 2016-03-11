@@ -1,15 +1,13 @@
 # AngularJS anchor scroll to element directive
 
-[TODO - brief summary]
+Anchor scrolling for Ionic Framework
 
 ## Demo
-http://Ahsan Ayaz.github.io/ionic-el-scroll/
+http://AhsanAyaz.github.io/ionic-el-scroll/
 
 ## Dependencies
 - required:
-	[TODO]
-- optional
-	[TODO]
+	[ionic]
 
 See `bower.json` and `index.html` in the `gh-pages` branch for a full list / more details
 
