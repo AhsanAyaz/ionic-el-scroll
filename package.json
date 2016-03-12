@@ -1,8 +1,9 @@
 {
 	"author": "",
-	"name": "ionic-el-scroll-demo",
-	"version": "0.0.0",
-	"description": "",
+	"name": "ionic-el-scroll",
+	"version": "1.0.2",
+	"description": "Ionic El Scroll",
+  	"keywords": ["ionic","angular","scroll","angular scroll","div scroll","page scroll"],
 	"homepage": "",
 	"dependencies": {
 	},
