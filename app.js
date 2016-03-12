@@ -29,7 +29,7 @@ config(['$stateProvider', '$locationProvider', '$compileProvider', '$urlRouterPr
 
 	// $routeProvider.otherwise({redirectTo: appPathRoute+'home'});
 	$stateProvider.state('home',{
-		url:'/home',
+		url:'/',
 		templateUrl: pagesPath + 'home/home.html',
 		controlle: 'HomeCtrl'
 	});
