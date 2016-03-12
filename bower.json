@@ -4,8 +4,8 @@
   "authors": [
     "ahsan.ubitian@gmail.com"
   ],
-  "description": "Demo",
-  "keywords": [],
+  "description": "Ionic El Scroll Demo",
+  "keywords": ["ionic","angular","scroll","angular scroll","div scroll","page scroll"],
   "license": "MIT",
   "ignore": [
     "**/.*",
